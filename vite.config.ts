@@ -5,5 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
     assetsInclude: ['**/*.json'],
-    plugins: [enhancedImages(), tailwindcss(), sveltekit()]
+    plugins: [enhancedImages(), tailwindcss(), sveltekit()],
+    preview: {
+        allowedHosts: ['ufoteam.up.railway.app']
+    }
 });
