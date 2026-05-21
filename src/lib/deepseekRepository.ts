@@ -35,7 +35,7 @@ export function getPresentationSummary(url: string): Promise<string> {
                     'Authorization': `Bearer ${ACCESS_TOKEN}`
                 },
                 body: JSON.stringify({
-                    model: 'deepseek-ai/DeepSeek-R1',
+                    model: 'deepseek-ai/DeepSeek-R1-0528',
                     messages: [
                         {
                             role: "user",
